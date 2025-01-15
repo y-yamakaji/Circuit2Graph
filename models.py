@@ -1,7 +1,7 @@
 """Module providing GNN models """
 import torch.nn as nn
 from torch_geometric.nn import SAGEConv, BatchNorm
-from util import scatter_max
+from torch_scatter import scatter_max
 
 class SAGE(nn.Module):
     def __init__(self, in_num, out_num):
