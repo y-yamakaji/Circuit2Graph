@@ -19,14 +19,15 @@ Ensure that [LTspice XVII](https://www.analog.com/jp/resources/design-tools-and-
     ```sh
     pip install torch --index-url https://download.pytorch.org/whl/cu118
     pip install numpy torch_geometric
-    # Optional
-    pip install matplotlib networkx 
+    pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.5.0+cu118.html
+    (optional) pip install matplotlib networkx 
     ```
-
+    
 This code has been tested with the following library versions:
 - numpy: 2.2.1
 - torch: 2.5.1
 - torch_geometric: 2.6.1
+- torch_scatter: 2.1.2
 - matplotlib: 3.10.0 (optional)
 - networkx: 3.4.2 (optional)
 
@@ -36,6 +37,7 @@ The calculation time is slower compared to a GPU environment, but the code suppo
 1. Install the required libraries:
     ```sh
     pip install numpy torch torch_geometric
+    pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.5.0+cpu.html
     # Optional
     pip install matplotlib networkx 
     ```
