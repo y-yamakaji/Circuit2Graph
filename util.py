@@ -184,13 +184,6 @@ def natural_sort_key(item: str) -> List[str]:
 def natsorted(items: List[str]) -> List[str]:
     return sorted(items, key=natural_sort_key)
 
-def scatter_max(src: torch.Tensor, 
-                index: torch.Tensor, 
-                dim: int = -1, 
-                out: Optional[torch.Tensor] = None, 
-                dim_size: Optional[int] = None) -> Tuple[torch.Tensor, torch.Tensor]:
-    return torch.ops.torch_scatter.scatter_max(src, index, dim, out, dim_size)
-
 def accuracy(output: torch.Tensor, labels: torch.Tensor) -> float:
     preds = output.max(1)[1].type_as(labels)
     correct = preds.eq(labels).double()
