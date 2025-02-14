@@ -47,10 +47,10 @@ When running this code for the first time, execute the batch file `_make_netlist
 
 To execute, run the following scripts in order:
 ```sh
-python extract_netlist.py
-python extract_node_edge.py
-python data_loading.py
-python train.py
+python extract_netlist.py --semiconductor star --mutual equiv
+python extract_node_edge.py --semiconductor star --mutual equiv
+python data_loading.py --semiconductor star --mutual equiv --train_test 0.3
+python train.py --semiconductor star --mutual equiv --seed 12 --epoch 30000 --batch 5000
 ```
 
 ## Hyperparameters
