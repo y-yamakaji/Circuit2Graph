@@ -5,6 +5,7 @@ This repository contains the source code for implementing graph classification i
 - Yusuke Yamakaji, Hayaru Shouno, and Kunihiko Fukushima, [Circuit2Graph: Circuits With Graph Neural Networks](https://ieeexplore.ieee.org/document/10494518), IEEE Access, vol. 12, pp. 51818-51827, 2024.
 - Yusuke Yamakaji, Hayaru Shouno, and Kunihiko Fukushima, [Circuit2Graph: Diodes as Asymmetric Directional Nodes](https://ieeexplore.ieee.org/document/10752500), IEEE Access, vol. 12, pp. 168963-168974, 2024.
 - Yusuke Yamakaji, Hayaru Shouno, and Kunihiko Fukushima, [Equivalent Circuit for Single/Three Phase Magnetic Coupling With Graph Neural Networks](https://ieeexplore.ieee.org/document/10731705), IEEE Transactions on Power Electronics, vol. 40, no. 2, pp. 3313-3325, Feb. 2025.
+- Yusuke Yamakaji, [Feature extraction of analog and digital circuits with graph representation](https://uec.repo.nii.ac.jp/records/2000610), Doctoral Thesis, The University of Electro-Communications, 2025.
 
 ## Environment Setup
 Assume that LTspice XVII  is installed in the "C:\LTspice" directory. If the installation path is different, please modify the "default=os.path.join('C:', 'LTspice')" in `params.py`. Additionally, LTspice XVII may have files like `examples.zip` and `lib.zip` in the "C:\LTspice" directory. Please unzip these files beforehand so that "C:\LTspice\examples" and "C:\LTspice\lib" are accessible.
